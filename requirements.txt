@@ -1,1 +1,3 @@
-apt-get -y install git zip vim
+git 
+zip 
+vim
