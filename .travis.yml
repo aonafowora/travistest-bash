@@ -3,10 +3,6 @@ dist: trusty
 os:
 - linux
 
-cache:
-  directories:
-  - "${HOME}/bin"
-
 addons:
   apt:
     packages:
