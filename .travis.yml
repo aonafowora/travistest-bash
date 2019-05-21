@@ -13,3 +13,12 @@ before_script:
 - mkdir -p "${HOME}/travis/test"
 script:
 - touch ${HOME}/travis/test/test1.txt
+before_deploy:
+- rm -rf /tmp/*
+- mkdir -p /tmp/travis/bashtest/
+- cd /tmp/travis/bashtet/
+deploy:
+provider: script
+script: bash scripts/deploy.sh
+on:
+branch: develop
